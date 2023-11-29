@@ -90,7 +90,7 @@ function createApp(database) {
         temporalDate &&
         temporalDate.year === parsedHoliday.year &&
         temporalDate.month === parsedHoliday.month &&
-        (date.getDate() || temporalDate.day) === parsedHoliday.day
+        temporalDate.day === parsedHoliday.day
       ) {
         return true;
       }
