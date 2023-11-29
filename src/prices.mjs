@@ -84,6 +84,7 @@ function createApp(database) {
 
   function isHoliday(date, temporalDate) {
     const holidays = database.getHolidays();
+    const day = temporalDate ?? date;
     for (let row of holidays) {
       let parsedHoliday = Temporal.PlainDate.from(row.holiday);
       if (
