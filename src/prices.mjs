@@ -26,10 +26,14 @@ function createApp(database) {
 
   function parseDate(dateString) {
     if (dateString) {
-      const date = dateString.split('-')
-      const parsedDate = Temporal.PlainDate(date[0], date[1], date[2]);
-      console.log('array date',date);
-      console.log('temporal plaindate',parsedDate);
+      const date = dateString.split("-");
+      const parsedDate = Temporal.PlainDate.from({
+        year: date[0],
+        month: date[1],
+        day: date[2],
+      });
+      console.log("array date", date);
+      console.log("temporal plaindate", parsedDate);
       return parsedDate;
     }
   }
