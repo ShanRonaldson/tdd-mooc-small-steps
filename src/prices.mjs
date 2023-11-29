@@ -79,7 +79,7 @@ function createApp(database) {
   }
 
   function isMonday(date, temporalDate) {
-    return date.getDay() === 1;
+    return temporalDate ? temporalDate.dayOfWeek === 1 : date.getDay() === 1;
   }
 
   function isHoliday(date) {
