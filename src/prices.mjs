@@ -91,7 +91,7 @@ function createApp(database) {
         day &&
         day.getFullYear() === parsedHoliday.year &&
         day.getMonth() === (parsedHoliday.month - 1) &&
-        date.getDate() === parsedHoliday.day
+        day.getDate() === parsedHoliday.day
       ) {
         return true;
       }
