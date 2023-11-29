@@ -25,15 +25,15 @@ function createApp(database) {
   });
 
   function parseDate(dateString) {
-    console.log(dateString);
     if (dateString) {
-      
       return new Date(dateString);
     }
   }
   function parseTemporalDate(dateString) {
     if (dateString) {
-      return new Temporal.PlainDate.from(dateString);
+      const date = Temporal.PlainDate.from(dateString);
+console.log(date)
+      return date;
     }
   }
 
