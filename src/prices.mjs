@@ -76,7 +76,7 @@ function createApp(database) {
     return reduction;
   }
 
-  function isMonday(date) {
+  function isMonday(date, dateString) {
     console.log(date)
     return date.getDay() === 1;
   }
