@@ -26,7 +26,9 @@ function createApp(database) {
 
   function parseDate(dateString) {
     if (dateString) {
-      return new Date(dateString);
+      const date = new Date(dateString);
+      console.log(date);
+      return date;
     }
   }
   function parseTemporalDate(dateString) {
