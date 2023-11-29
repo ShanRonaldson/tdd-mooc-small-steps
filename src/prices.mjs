@@ -27,11 +27,7 @@ function createApp(database) {
   function parseDate(dateString) {
     if (dateString) {
       const date = dateString.split("-");
-      const parsedDate = new Temporal.PlainDate(
-        Number(date[0]),
-        Number(date[1]),
-        Number(date[2])
-      );
+      const parsedDate = new Temporal.PlainDate(dateString);
       return parsedDate;
     }
   }
