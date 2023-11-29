@@ -90,7 +90,6 @@ function createApp(database) {
       if (
         day &&
         
-        
         date.getDate() === parsedHoliday.day
       ) {
         return true;
