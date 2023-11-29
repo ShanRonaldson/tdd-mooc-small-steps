@@ -32,8 +32,6 @@ function createApp(database) {
         month: Number(date[1]),
         day: Number(date[2]),
       });
-      console.log("array date", date);
-      console.log("temporal plaindate", parsedDate);
       return parsedDate;
     }
   }
@@ -85,7 +83,7 @@ function createApp(database) {
   }
 
   function isMonday(date) {
-    return date.getDay() === 1;
+    return date.day === 1;
   }
 
   function isHoliday(date) {
