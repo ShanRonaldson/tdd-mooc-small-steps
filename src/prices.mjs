@@ -79,6 +79,7 @@ function createApp(database) {
   }
 
   function isMonday(date, temporalDate) {
+    console.log('value')
     return temporalDate.dayOfWeek === 1;
   }
 
